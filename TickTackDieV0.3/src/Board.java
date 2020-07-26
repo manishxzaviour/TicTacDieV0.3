@@ -4,8 +4,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Board extends CpuMove{
-    JFrame frame= new JFrame("TicTackDIE");
-    JLayeredPane containerL= new JLayeredPane();
+    static JFrame frame= new JFrame("TicTackDIE");
+    static JLayeredPane containerL= new JLayeredPane();
     JPanel panel=new JPanel();
 
     static ImageIcon x = new ImageIcon("src/Webp.net-resizeimageX (1).png");
@@ -15,8 +15,8 @@ public class Board extends CpuMove{
     static ImageIcon c=new ImageIcon();
 
     JLabel points= new JLabel("YOU                CPU");
-    JLabel youPoints=new JLabel();
-    JLabel cpuPoints=new JLabel();
+    static JLabel youPoints=new JLabel();
+    static JLabel cpuPoints=new JLabel();
     JButton containerB=new JButton();
 
     static int pPoint =0;
@@ -255,14 +255,7 @@ public class Board extends CpuMove{
         frame.add(containerL);
         frame.setVisible(true);
     }
-     void ref(){
-        youPoints.setText(String.valueOf(pPoint));
-        containerL.add(youPoints,Integer.valueOf(3));
-        cpuPoints.setText(String.valueOf(cPoint));
-        containerL.add(cpuPoints,Integer.valueOf(3));
-        frame.add(containerL);
-
-    }
+    
     public static void main(String[] args) {
         new Board();
     }
