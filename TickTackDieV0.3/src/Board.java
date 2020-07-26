@@ -85,7 +85,6 @@ public class Board extends CpuMove{
                     new Place(1,checkPos(1),true);
                     Place.checkW();
                     cpuM();
-                    ref();
                 }
             }
         });
@@ -103,7 +102,6 @@ public class Board extends CpuMove{
                 new Place(2,checkPos(2),true);
                 Place.checkW();
                 cpuM();
-                ref();
                 }
             }
         });
@@ -121,7 +119,6 @@ public class Board extends CpuMove{
                 new Place(3,checkPos(3),true);
                 Place.checkW();
                 cpuM();
-                ref();
                 }
             }
         });
@@ -139,7 +136,6 @@ public class Board extends CpuMove{
                 new Place(4,checkPos(4),true);
                 Place.checkW();
                 cpuM();
-                ref();
                 }
             }
         });
@@ -157,7 +153,6 @@ public class Board extends CpuMove{
                     new Place(5,checkPos(5), true);
                     Place.checkW();
                     cpuM();
-                    ref();
                 }
             }
         });
@@ -175,7 +170,6 @@ public class Board extends CpuMove{
                 new Place(6,checkPos(6),true);
                 Place.checkW();
                 cpuM();
-                ref();
                 }
             }
         });
@@ -193,7 +187,6 @@ public class Board extends CpuMove{
                 new Place(7,checkPos(7),true);
                 Place.checkW();
                 cpuM();
-                ref();
                 }
             }
         });
@@ -211,7 +204,6 @@ public class Board extends CpuMove{
                 new Place(8,checkPos(8),true);
                 Place.checkW();
                 cpuM();
-                ref();
                 }
             }
         });
@@ -229,7 +221,6 @@ public class Board extends CpuMove{
                 new Place(9,checkPos(9),true);
                 Place.checkW();
                 cpuM();
-                ref();
                 }
             }
         });
