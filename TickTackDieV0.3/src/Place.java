@@ -16,22 +16,27 @@ public class Place{
             case 1:
                 Board.a1.setIcon(u);
                 board[0][0]=usr;
+                ref();
                 break;
             case 2:
                 Board.a2.setIcon(u);
                 board[0][1]=usr;
+                ref();
                 break;
             case 3:
                 Board.a3.setIcon(u);
-                board[0][2]=usr;
+                board[0][2]=usr; 
+                ref();
                 break;
             case 4:
                 Board.b1.setIcon(u);
                 board[1][0]=usr;
+                ref();
                 break;
             case 5:
                 Board.b2.setIcon(u);
                 board[1][1]=usr;
+                ref();
                 break;
             case 6:
                 Board.b3.setIcon(u);
@@ -40,14 +45,17 @@ public class Place{
             case 7:
                 Board.c1.setIcon(u);
                 board[2][0]=usr;
+                ref();
                 break;
             case 8:
                 Board.c2.setIcon(u);
                 board[2][1]=usr;
+                ref();
                 break;
             case 9:
                 Board.c3.setIcon(u);
                 board[2][2]=usr;
+                ref();
                 break;
         }
     }}
@@ -87,6 +95,15 @@ public class Place{
         {   Board.cPoint++; new Place();}
         else if((board[0][0]=='C'&&board[1][1]=='C'&&board[2][2]=='C')||(board[0][2]=='C'&&board[1][1]=='C'&&board[2][0]=='C'))
         {   Board.cPoint++; new Place();}
+    }
+    
+    void ref(){
+        Board.youPoints.setText(String.valueOf(Board.pPoint));
+        Board.containerL.add(Board.youPoints,Integer.valueOf(3));
+        Board.cpuPoints.setText(String.valueOf(Board.cPoint));
+        Board.containerL.add(Board.cpuPoints,Integer.valueOf(3));
+        Board.frame.add(Board.containerL);
+
     }
 
 }
