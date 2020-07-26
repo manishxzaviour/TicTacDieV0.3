@@ -103,7 +103,7 @@ public class Place{
         Board.cpuPoints.setText(String.valueOf(Board.cPoint));
         Board.containerL.add(Board.cpuPoints,Integer.valueOf(3));
         Board.frame.add(Board.containerL);
-
+        checkW();
     }
 
 }
